@@ -1,6 +1,9 @@
 {
+    "laravel/homestead": {
+        "version": "v10.7.0"
+    },
     "php": {
-        "version": "7.4"
+        "version": "7.2"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -106,6 +109,9 @@
     },
     "symfony/polyfill-php73": {
         "version": "v1.14.0"
+    },
+    "symfony/process": {
+        "version": "v5.0.7"
     },
     "symfony/routing": {
         "version": "4.2",

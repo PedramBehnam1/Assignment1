@@ -8,3 +8,10 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+# Homestead
+Homestead.yaml
+.vagrant
+
+# System
+.idea

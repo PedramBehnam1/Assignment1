@@ -95,3 +95,46 @@ located in <code>/etc/docker/</code>
 Created by [Kévin Dunglas](https://dunglas.fr), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).<br>
 Xdebug instruction by [Farid Golchin](http://igolchin.com)
 
+------
+
+Homestead Installation
+
+0. Install Vagrant for your system
+https://www.vagrantup.com/downloads.html 
+
+1. on Mac or Linux run `php vendor/bin/homestead make` or 
+on Windows run `vendor\\bin\\homestead make`
+https://laravel.com/docs/7.x/homestead#per-project-installation
+
+2. modify `Homestead.yaml`
+
+an example is (please modify `Path-to-project)
+```yaml
+ip: 192.168.10.10
+memory: 2048
+cpus: 2
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Path-to-project/base-symfony-docker
+        to: /home/vagrant/code
+sites:
+    -
+        map: web2.test
+        to: /home/vagrant/code/public
+databases:
+    - homestead
+features:
+    -
+        mariadb: false
+    -
+        ohmyzsh: false
+    -
+        webdriver: false
+name: base-symfony-docker
+hostname: base-symfony-docker
+```
+3. run `vagrant up`
