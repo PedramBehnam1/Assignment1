@@ -101,6 +101,7 @@ Xdebug instruction by [Farid Golchin](http://igolchin.com)
 
 0.a. Install virtual box:  
 https://www.virtualbox.org/wiki/Downloads
+
 0.b. Install Vagrant for your system  
 https://www.vagrantup.com/downloads.html 
 
