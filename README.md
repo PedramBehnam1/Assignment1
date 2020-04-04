@@ -97,18 +97,20 @@ Xdebug instruction by [Farid Golchin](http://igolchin.com)
 
 ------
 
-Homestead Installation
+## Homestead Installation
 
-0. Install Vagrant for your system
+0.a. Install virtual box:  
+https://www.virtualbox.org/wiki/Downloads
+0.b. Install Vagrant for your system  
 https://www.vagrantup.com/downloads.html 
 
 1. on Mac or Linux run `php vendor/bin/homestead make` or 
-on Windows run `vendor\\bin\\homestead make`
+on Windows run `vendor\\bin\\homestead make`  
 https://laravel.com/docs/7.x/homestead#per-project-installation
 
 2. modify `Homestead.yaml`
 
-an example is (please modify `Path-to-project)
+an example is: (please modify `Path-to-project)
 ```yaml
 ip: 192.168.10.10
 memory: 2048
