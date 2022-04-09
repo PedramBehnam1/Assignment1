@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Symfony Docker
 
 A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony](https://symfony.com) web framework, with full [HTTP/2](https://symfony.com/doc/current/weblink.html) and HTTPS support.
@@ -141,3 +142,6 @@ name: base-symfony-docker
 hostname: base-symfony-docker
 ```
 3. run `vagrant up`
+=======
+# Assignment1
+>>>>>>> 60fee7920a88fd8da4f692331a02fca0041a8745
